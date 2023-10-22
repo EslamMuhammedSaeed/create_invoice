@@ -1,0 +1,84 @@
+.invoice_items_wrapper {
+  margin-top: 20px;
+  /* background: white; */
+  border-radius: 8px;
+  /* padding: 20px 30px; */
+}
+
+.invoice_items_wrapper .input_group_row {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 10px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+  border: 0.8px solid #dee2e6;
+  border-radius: 8px;
+  padding: 30px 30px;
+  background: white;
+}
+.extra_fields {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+.discount_group {
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.invoice_items_wrapper .input_group_row_discount {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+
+  padding: 5px 5px;
+  background: white;
+}
+/* .invoice_items_wrapper .discount_group {
+  border-radius: 7px;
+} */
+.invoice_items_wrapper .accordion {
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+}
+.accordion-button:not(.collapsed) {
+  background-color: white !important;
+}
+
+.accordion-button {
+  background-color: white !important;
+  color: rgb(147 147 147) !important;
+  /* font-weight: bold; */
+}
+.accordion-button::after {
+  color: #626d7d !important;
+}
+
+.outlined-input.input_header input {
+  color: #292929;
+  height: 2.5rem;
+  min-height: 2.5rem;
+  outline: 1px solid rgb(218 218 218);
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  transition: 0.1s var(--main-ease);
+  /* width: 100%; */
+}
+.add_item_btn {
+  width: 100%;
+  display: flex;
+  border: 2px dashed #243d8c;
+  border-radius: 5px;
+  background: none;
+  padding: 10px;
+  color: #243d8c;
+  font-weight: bold;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

@@ -1,0 +1,163 @@
+
+
+
+.invoice_info_wrapper {
+  background: white;
+  border-radius: 8px;
+  padding: 30px 30px;
+ border: 0.8px solid #dee2e6;
+  
+}
+.invoice_info_wrapper .section_header{
+
+}
+
+.invoice_info_wrapper .input_group_row{
+    display:flex;
+    justify-content:space-between;
+    gap:25px;
+    margin-bottom:20px;
+
+}
+
+.outlined-input {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.outlined-input input,textarea {
+  color: #292929;
+  height: 2.5rem;
+  min-height: 2.5rem;
+  outline: 1px solid rgb(218 218 218);
+  border-radius: 5px;
+  border: none;
+  background-color: var(--main-white);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  transition: 0.1s var(--main-ease);
+  width:100%;
+}
+
+.outlined-input.disabled input:disabled {
+
+  border: none; 
+  outline:none;
+  background-color: rgb(242 242 242) !important;
+
+}
+
+.outlined-input.disabled label {
+
+  background-color: transparent;
+
+}
+
+.outlined-input label {
+  position: absolute;
+  /* top: 50%;
+  left: 4%; */
+  transform: translateY(-50%);
+  background-color: var(--main-white);
+  color: var(--main-grey);
+  text-align: center;
+  transition: 0.2s var(--main-ease);
+  font-size: 0.9rem;
+  pointer-events: none;
+  padding: 0 4px;
+  font-weight:bold;
+
+  /*added to stop the animation*/
+  top: -2px;
+  left: 10px;
+  font-size: 0.9rem;
+}
+
+.outlined-input input:not(:placeholder-shown) ~ label,
+.outlined-input input:focus ~ label {
+  top: -2px;
+  left: 10px;
+  font-size: 0.9rem;
+}
+
+.outlined-input textarea:not(:placeholder-shown) ~ label,
+.outlined-input textarea:focus ~ label {
+  top: -2px;
+  left: 10px;
+  font-size: 0.9rem;
+}
+
+.outlined-input input:focus,textarea:focus {
+  outline: 1px solid var(--main-blue) !important;
+}
+.outlined-input input:hover,textarea:hover {
+  outline: 1px solid var(--main-grey)
+}
+.outlined-input input:focus ~ label {
+  color: var(--main-blue) !important;
+}
+.outlined-input textarea:focus ~ label {
+    color: var(--main-blue) !important;
+}
+
+/* END OUTLINED INPUT STYLES */
+
+.standard-input {
+    position: relative;
+}
+
+.standard-input input {
+    color: var(--main-white);
+    height: 4rem;
+    border: none;
+    border-bottom: 1px solid var(--main-grey);
+    background-color: var(--main-dark-grey);
+    padding-left: 20px;
+    font-size: 20px;
+    transition: .1s var(--main-ease));
+    outline: none;
+    box-sizing: border-box;
+}
+
+.standard-input label {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    background-color: var(--main-dark-grey);
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    transition: .2s var(--main-ease);
+    font-size: 1.5rem;
+    pointer-events: none;
+    padding: 0 5px;
+}
+
+.standard-input input:not(:placeholder-shown) ~ label,
+.standard-input input:focus ~ label {
+    top: 0px;
+    left: 10px;
+    font-size: 1rem;
+}
+
+.standard-input .underline {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.2s var(--main-ease);
+    border-bottom: 2px solid var(--main-blue);
+}
+
+.standard-input input:focus ~ .underline {
+    transform: scaleX(1);
+}
+.standard-input input:hover {
+    border-bottom: 2px solid var(--main-white);
+}
+.standard-input input:focus ~ label {
+    color: var(--main-blue) !important;
+}
